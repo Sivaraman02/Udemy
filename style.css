@@ -50,6 +50,9 @@ body {
     display: flex;
     gap: 10px;
 }
+.navbar-4{
+    display: none;
+}
 /* mylearning */
 .mylearning{
     position: relative;
@@ -142,6 +145,9 @@ body {
 
 .coursecard {
     width: 300px;
+    flex-basis: 20%;
+    flex-grow: 1;
+    margin: 5px;
 }
 
 .coursecard img {
@@ -199,4 +205,28 @@ body {
 
 .footer__one p {
     margin: 20px;
+}
+
+/*media queries*/
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+   
+    
+}
+@media screen and (max-width:600px) {
+    .coursecard{
+        flex-basis: 40%;
+    }
+    .categories{
+        display: none;
+    }
+    .navbar-2,.navbar-3{
+        display: none;
+    }
+    .navbar-4{
+        display: block;
+    }
+    
 }
